@@ -1,0 +1,130 @@
+.category-icon-large {
+  font-size: 56px;
+  display: block;
+  margin-bottom: 20px;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.1));
+}
+
+.category-content {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: 48px;
+  padding: 48px 0;
+}
+
+.main-content h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 28px;
+}
+
+.main-content .calculator-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.other-categories {
+  background: white;
+  border-radius: 20px;
+  padding: 28px;
+  border: 1px solid #e2e8f0;
+}
+
+.other-categories h3 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 20px;
+}
+
+.other-categories ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.other-categories li {
+  margin-bottom: 8px;
+}
+
+.other-categories a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #475569;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px 16px;
+  border-radius: 10px;
+  transition: all 0.2s;
+  background: #f8fafc;
+}
+
+.other-categories a:hover {
+  background: linear-gradient(135deg, #3b82f6 0%, #6366f1 100%);
+  color: white;
+  transform: translateX(4px);
+}
+
+.other-categories .category-icon {
+  font-size: 20px;
+}
+
+.not-found {
+  text-align: center;
+  padding: 100px 24px;
+}
+
+.not-found h1 {
+  font-size: 48px;
+  color: #0f172a;
+  margin-bottom: 16px;
+}
+
+.not-found p {
+  color: #64748b;
+  font-size: 18px;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 1024px) {
+  .category-content {
+    grid-template-columns: 1fr;
+    gap: 32px;
+  }
+  
+  .sidebar {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .category-content {
+    padding: 32px 0;
+  }
+  
+  .main-content h2 {
+    font-size: 24px;
+  }
+  
+  .main-content .calculator-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .not-found {
+    padding: 60px 16px;
+  }
+  
+  .not-found h1 {
+    font-size: 32px;
+  }
+}
