@@ -1,0 +1,154 @@
+.blog-content {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  gap: 40px;
+  padding: 40px 0;
+}
+
+.blog-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.category-filter {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.category-filter h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 16px;
+}
+
+.category-filter ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.category-filter li {
+  margin-bottom: 4px;
+}
+
+.category-filter button {
+  width: 100%;
+  text-align: left;
+  padding: 10px 12px;
+  background: none;
+  border: none;
+  border-radius: 6px;
+  color: #475569;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.category-filter button:hover {
+  background: #f1f5f9;
+  color: #2563eb;
+}
+
+.category-filter button.active {
+  background: #2563eb;
+  color: white;
+}
+
+.blog-main {
+  min-width: 0;
+}
+
+.blog-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 24px;
+}
+
+.blog-header h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.blog-header p {
+  color: #64748b;
+  font-size: 14px;
+}
+
+.blog-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.blog-card {
+  background: white;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  text-decoration: none;
+  transition: all 0.2s;
+}
+
+.blog-card:hover {
+  border-color: #2563eb;
+  box-shadow: 0 4px 12px rgba(37, 99, 235, 0.1);
+  transform: translateY(-2px);
+}
+
+.blog-card-content {
+  padding: 24px;
+}
+
+.blog-card .blog-category {
+  display: inline-block;
+  font-size: 12px;
+  color: #2563eb;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  margin-bottom: 8px;
+}
+
+.blog-card h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1e293b;
+  margin-bottom: 12px;
+  line-height: 1.4;
+}
+
+.blog-card p {
+  color: #64748b;
+  font-size: 14px;
+  line-height: 1.6;
+  margin-bottom: 16px;
+}
+
+.blog-card .blog-meta {
+  display: flex;
+  gap: 8px;
+  font-size: 13px;
+  color: #94a3b8;
+}
+
+@media (max-width: 1024px) {
+  .blog-content {
+    grid-template-columns: 1fr;
+  }
+  
+  .blog-sidebar {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  .blog-grid {
+    grid-template-columns: 1fr;
+  }
+}

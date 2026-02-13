@@ -1,0 +1,41 @@
+.adsense-wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 24px 0;
+}
+
+.adsense-wrapper.adsense-default,
+.adsense-wrapper.adsense-leaderboard {
+  width: 100%;
+}
+
+.adsense-placeholder-dev {
+  background: #f1f5f9;
+  border: 1px dashed #cbd5e1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 4px;
+}
+
+.adsense-placeholder-dev span {
+  color: #64748b;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.adsense-placeholder-dev p {
+  color: #94a3b8;
+  font-size: 12px;
+  margin: 4px 0 0;
+}
+
+@media (max-width: 768px) {
+  .adsense-default .adsense-placeholder-dev,
+  .adsense-leaderboard .adsense-placeholder-dev {
+    width: 100%;
+    max-width: 320px;
+  }
+}
